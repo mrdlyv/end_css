@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Responsive Web Page</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .logo{
+            background: url(amg.jpg) center/cover;
+            height: 80px;
+            width: 80px;
+        }
+        .amgkl{
+            color: white;
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            color: white;
+            width: 100%;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 350px;
+            width: 350px;
+            background-color: rebeccapurple;
+            margin: 10px;
+            border-radius: 10%;
+        }
+        .sosial{
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .wp{
+            height: 34px;
+            width: 34px;
+            background: url(wp.png) center/cover;
+            cursor: pointer;
+            transition: .4s;
+        }
+        .wp:hover{
+            scale: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="amgkl">AMGKL</div>
+    </header>
+    <main>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </main>
+    <div class="sosial"></div>
+    <footer>
+        <div class="sosial">
+            <a href="https://wa.me/+994554212907">
+                <div class="wp"></div>
+            </a>
+        </div>
+        <div>Design by AMGKL</div>
+    </footer>
+</body>
+</html>
